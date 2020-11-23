@@ -28,14 +28,16 @@ a {
   left: 0;
   top: 0; */
 }
-
+.head figure {
+  text-align: center;
+}
 .head img {
   height: 130px;
   width: 130px;
 }
 .main1 {
-  /* min-height: calc(100vh - 90px); */
-  /* max-width: 100%; */
+  min-height: calc(100vh - 90px);
+  max-width: 100%;
   /* padding-top: 40px; */
   display: flex;
   flex-wrap: wrap;
@@ -92,3 +94,23 @@ a {
   box-shadow: 1px 3px 11px ;
   cursor: pointer;
 }
+
+@media screen and (max-width: 400px) {
+  body {
+    max-width: 100%;
+  }
+  .head {
+  height: 90px;
+  }
+  .head__logo {
+    display: none;
+  }
+  .main1 {
+    background-color: aqua;
+    /* width: 100%; */
+  }
+  .container1 {
+    max-width: 100%;
+  }
+}
+
